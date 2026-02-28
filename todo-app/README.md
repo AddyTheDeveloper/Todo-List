@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 Experience the cosmic interface here:  
-👉 **[View Live Demo](https://AddyTheDeveloper.github.io/todo-app/)**
+👉 **[View Live Demo](https://AddyTheDeveloper.github.io/Todo-List/)**
 
 ---
 
@@ -46,7 +46,7 @@ Experience the cosmic interface here:
 ## 📁 Project Structure
 
 ```text
-todo-app/
+Todo-List/
 ├── public/                 # Static assets
 ├── src/
 │   ├── assets/             # Images and global icons
@@ -73,8 +73,8 @@ todo-app/
 
 1.  **Clone the Mission Logs:**
     ```bash
-    git clone https://github.com/AddyTheDeveloper/todo-app.git
-    cd todo-app
+    git clone https://github.com/AddyTheDeveloper/Todo-List.git
+    cd Todo-List
     ```
 
 2.  **Fuel Up (Install Dependencies):**
