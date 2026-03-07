@@ -1,6 +1,13 @@
-# 🌌 Cosmic Tasks
+# 🌌 Cosmic Tasks: Mission Control for Your Productivity
 
-**Cosmic Tasks** is a premium-quality, futuristic React Todo List application designed to elevate your productivity into the stratosphere. Built with **Vite** and **React 19**, it features a stunning glassmorphism UI, fluid micro-animations, and a robust set of features for modern task management.
+**Cosmic Tasks** is a premium-quality, futuristic React Todo List application designed to elevate your productivity into the stratosphere. Built with **React 19** and **Vite**, it features a stunning glassmorphism UI, fluid micro-animations, and a robust set of features for modern mission management.
+
+---
+
+## 🎨 Visual Preview
+
+![Cosmic Tasks Mockup](./src/assets/mockup.png)
+*Behold the "Deep Space" interface in all its glassmorphic glory.*
 
 ---
 
@@ -12,64 +19,73 @@ Experience the cosmic interface here:
 
 ## ✨ Stellar Features
 
--   **💎 Ultra-Modern UI:** Stunning Glassmorphism card layout with 24px blur, subtle border shimmers, and dynamic background blobs.
--   **🎭 Advanced Animations:** Fluid entry/exit transitions, hover-based 3D tilts, and custom-animated checkboxes.
--   **📂 Task Hierarchy:** Support for titles, detailed descriptions, and three levels of priority (Low, Medium, High).
--   **📅 Time Tracking:** Set due dates for your missions and track progress in real-time.
--   **📊 Progress Visualization:** Interactive progress bar that tracks your fleet's completion percentage.
--   **🌓 Theme Switching:** Seamlessly toggle between "Deep Space" (Dark) and "Nebula White" (Light) modes.
--   **💾 Persistence:** Your mission data is automatically synced to `localStorage` for cross-session continuity.
--   **📱 Fully Responsive:** Carefully crafted media queries ensure a premium experience on mobile, tablet, and desktop.
--   **⌨️ Power User Support:** Lightning-fast task entry with keyboard shortcuts (`Enter` to launch, `Escape` to cancel).
--   **🔔 Toast Notifications:** Real-time feedback via custom-styled toast alerts for every action.
+### 💎 Ultra-Modern UI/UX
+-   **Glassmorphism Engine:** Card layout with 24px blur, subtle border shimmers, and dynamic background blobs.
+-   **3D Hover Effects:** Tasks tilt in 3D space as you hover, providing tactile visual feedback.
+-   **Nebula Theme System:** Seamlessly toggle between "Deep Space" (Dark) and "Nebula White" (Light) modes with a single click.
+
+### 📂 Mission Management
+-   **Hierarchical Tasks:** Support for titles, detailed descriptions, and custom priorities.
+-   **Priority Matrix:** Categorize tasks into **Low**, **Medium**, or **High** with semantic color coding.
+-   **Due Date Orbit:** Set countdowns for your missions and track deadlines.
+-   **Smart Alerts:** Automated "Exhausted / Overdue" detection with pulsing red warnings.
+
+### ⏱️ Time & Progress Tracking
+-   **Time in Orbit:** Integrated per-task timer to track exactly how long you've spent on a mission.
+-   **Fleet Progress:** Interactive progress bar that visualizes your overall mission completion percentage.
+-   **Status Filters:** Quickly pivot between "Active", "Completed", or "All" missions.
+
+### ⚡ Power User Capabilities
+-   **Keyboard Shortcuts:**
+    -   `Enter` to launch a new task into orbit.
+    -   `Escape` to abort task creation/editing.
+    -   `Double-click` any task to instantly rename it.
+-   **Toast Notifications:** Real-time feedback via custom-styled toast alerts for every action.
+-   **Data Persistence:** Automatic `localStorage` syncing ensures your mission logs are safe across sessions.
 
 ---
 
 ## 🛠️ Tech Stack & Architecture
 
 ### **Core Frameworks**
--   **React 19:** Utilizing latest hooks (`useState`, `useEffect`) and functional components.
--   **Vite:** High-performance frontend tooling for instant HMR.
+-   **React 19:** Utilizing latest hooks (`useState`, `useEffect`, `useRef`) for optimal performance.
+-   **Vite:** High-performance frontend tooling for instant HMR and lightning-fast builds.
 
-### **Styling & Design**
--   **Vanilla CSS:** Custom properties (CSS variables) drive the entire theme system.
--   **Glassmorphism:** Leveraging `backdrop-filter` and semi-transparent HSL color palettes.
--   **Animations:** Pure CSS `@keyframes` and transitions for high-performance UI feedback.
+### **Design System**
+-   **Vanilla CSS + CSS Variables:** A robust token-based system drives the entire UI.
+-   **Animations:** Pure CSS `@keyframes` (shimmering borders, floating blobs, slide-in transitions).
+-   **Typography:** [Outfit](https://fonts.google.com/specimen/Outfit) — a modern, geometric sans-serif for high readability.
 
-### **State & Tools**
--   **LocalStorage API:** Zero-backend data persistence.
--   **Lucide-like SVGs:** Hand-crafted, semantic SVG icons for a lightweight footprint.
--   **GitHub Pages:** Automated deployment via `gh-pages` integration.
+### **State & API**
+-   **LocalStorage API:** Zero-backend data persistence for privacy and speed.
+-   **SVGs:** Hand-crafted, semantic SVG icons for a lightweight footprint without external icon dependencies.
 
 ---
 
-## 📁 Project Structure
+## 📁 Project structure
 
 ```text
 Todo-List/
-├── public/                 # Static assets
 ├── src/
-│   ├── assets/             # Images and global icons
-│   ├── components//        # Modular UI Components
-│   │   ├── Header.jsx      # Branding & Top Navigation
-│   │   ├── TodoInput.jsx   # Task creation with advanced options
+│   ├── assets/             # Branding assets and mockup
+│   ├── components/         # Modular UI Architecture
+│   │   ├── Header.jsx      # Branding & Identity
+│   │   ├── TodoInput.jsx   # Advanced task creation form
 │   │   ├── TodoList.jsx    # Managed list container
-│   │   ├── TodoItem.jsx    # Individual task logic & 3D hover
-│   │   ├── Filters.jsx     # Status filtering logic
-│   │   ├── ProgressBar.jsx # Progress visualization
-│   │   ├── ThemeToggle.jsx # Theme switching logic
+│   │   ├── TodoItem.jsx    # Core logic: 3D hover, Timer, Meta-badges
+│   │   ├── Filters.jsx     # Strategic mission filtering
+│   │   ├── ProgressBar.jsx # Mission completion visualization
+│   │   ├── ThemeToggle.jsx # Light/Dark mode orchestration
 │   │   ├── Toast.jsx       # Global notification system
 │   │   └── ...             # Decorative background elements
-│   ├── App.jsx             # Root logic & state management
-│   ├── index.css           # Global design system & animations
-│   └── main.jsx            # React entry point
-├── package.json            # Scripts & dependencies
-└── vite.config.js          # Build configuration
+│   ├── App.jsx             # Root Logic & State Management
+│   ├── index.css           # Global Design System & Token definitions
+│   └── main.jsx            # React Entry Point
 ```
 
 ---
 
-## 💻 Local Setup Instructions
+## 💻 Mission Launch (Local Setup)
 
 1.  **Clone the Mission Logs:**
     ```bash
@@ -88,20 +104,18 @@ Todo-List/
     ```
 
 4.  **Launch:**
-    Open `http://localhost:5173/` in your favorite browser.
+    Open `http://localhost:5173/` in your browser.
 
 ---
 
-## 🌐 Deployment to GitHub Pages
+## 🤝 Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This project is pre-configured for automated deployment.
-
-1.  Update the `homepage` in `package.json`.
-2.  Set the `base` path in `vite.config.js` to your repository name.
-3.  Deploy with a single command:
-    ```bash
-    npm run deploy
-    ```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git commit -m 'Add some AmazingFeature'`)
+5. Open a Pull Request
 
 ---
 
@@ -116,4 +130,4 @@ This project is pre-configured for automated deployment.
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
